@@ -1,5 +1,7 @@
 # 脱出数/f の上がった壁
 
+#### [normal](https://github.com/kpab/plottingResult/blob/main/result_morning/normal/heatmap.png)
+
 ## aw
 
 ![aw](../wall-image/aw_脱出数上がった壁.png)
