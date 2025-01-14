@@ -24,8 +24,6 @@
 ![wall01](../wall-image/walls/wall01.png)
 
 [wall01](https://github.com/kpab/plottingResult/tree/main/result_morning/wall01)
-[wall07](https://github.com/kpab/plottingResult/tree/main/result_morning/wall07)
-[wall10](https://github.com/kpab/plottingResult/tree/main/result_morning/wall10)
 
 ### wall07
 
@@ -33,8 +31,12 @@
 
 ![wall07](../wall-image/walls/wall07.png)
 
+[wall07](https://github.com/kpab/plottingResult/tree/main/result_morning/wall07)
+
 ### wall10
 
 改札の進行方向を基準に、流れを分断するように置いた壁
 
 ![wall10](../wall-image/walls/wall10.png)
+
+[wall10](https://github.com/kpab/plottingResult/tree/main/result_morning/wall10)
