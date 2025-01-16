@@ -19,14 +19,6 @@
 
 ## wall
 
-### wall01
-
-最も混雑した地点に置いた壁
-
-![wall01](../wall-image/walls/wall01.png)
-
-[wall01](https://github.com/kpab/plottingResult/tree/main/result_morning/wall01)
-
 ### wall07
 
 最も混雑した地点に流れる人を制限するように置いた壁
