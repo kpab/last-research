@@ -7,7 +7,10 @@
 
 <summary>用語</summary>
 
-- 最大人口密度: 駅構内を 2500 分割した時の、最も多い足跡の数
+### 最大人口密度
+
+駅構内を 2500 分割した時の、最も多い足跡の数
+
 </details>
 
 ## 結論（言いたいこと）
@@ -20,7 +23,12 @@
 <details>
 <summary>混雑が緩和された壁の紹介</summary>
 
+<details>
+<summary>脱出数の比較</summary>
+
 ![脱出数の比較](../datas/compares/脱出数の比較_walls.png)
+
+</details>
 
 ##### walls の軽い紹介
 
