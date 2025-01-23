@@ -12,6 +12,7 @@
 
 <details>
 <summary>現状の淵野辺駅の脱出数の取りうる範囲とそれを超えた壁の紹介</sumarry>
+あああ
 
 ![脱出数の比較](../datas/compares/脱出数の比較_walls.png)
 
