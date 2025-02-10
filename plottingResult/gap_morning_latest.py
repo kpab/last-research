@@ -10,7 +10,7 @@ from result_morning_latest import *
 
 type = "result_morning"
 
-now_string = "wall07"
+now_string = "wall09"
 kabe = True
 
 s_now_string = "s_" + now_string
@@ -122,6 +122,8 @@ def GappingHeatmapNew(now_agents_positions, walls, fig_name): # 正規化, posit
     global normalllls
 
     for key in keys:
+        if not key in now_agents_positions:
+            continue
         
         fig2, ax2 = plt.subplots(figsize=(12.0, 8.0),
                             facecolor="gainsboro")
@@ -197,5 +199,5 @@ def CountZero(now):
 
 
 
-# HeatmappingNumber(now, walls, now_string)
+HeatmappingNumber(now, walls, now_string)
 GappingHeatmapNew(now, walls, now_string)
