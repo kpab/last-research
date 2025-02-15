@@ -10,7 +10,7 @@ from result_morning_latest import *
 
 type = "result_morning"
 
-now_string = "normal"
+now_string = "wall09"
 kabe = False
 
 s_now_string = "s_" + now_string
@@ -53,7 +53,7 @@ def create_map_from_points(points_list, now, width=50, height=50, default_value=
     return original_map
 
 
-def HeatmappingNumber(now_agents_positions, walls, fig_name):
+def HeatmappingNumberBtoKCtoK(now_agents_positions, walls, fig_name):
     points_list = get_points_in_rectangles(walls)
         
     fig2, ax2 = plt.subplots(figsize=(12.0, 8.0),
@@ -70,7 +70,7 @@ def HeatmappingNumber(now_agents_positions, walls, fig_name):
     now = btok + ctok
     
 
-    ax2 = sns.heatmap(now, cmap='Wistia',cbar=False, annot=False, fmt='d', annot_kws={'fontsize':4.5})
+    ax2 = sns.heatmap(now, cmap='Greys',cbar=False, annot=False, fmt='d', annot_kws={'fontsize':4.5})
     for wall in walls:
             ax2.add_patch(Rectangle((wall[0]/10, wall[1]/10), (wall[2]-wall[0])/10, (wall[3]-wall[1])/10, fc='#696969'))
     ax2.invert_yaxis()
@@ -192,5 +192,5 @@ def CountZero(now):
 
 
 
-HeatmappingNumber(now, walls, now_string)
+HeatmappingNumberBtoKCtoK(now, walls, now_string)
 # GappingHeatmapNew(now, walls, now_string)
