@@ -201,3 +201,4 @@ def CountZero(now):
 
 HeatmappingNumber(now, walls, now_string)
 GappingHeatmapNew(now, walls, now_string)
+print("出力処理が完了しました")
