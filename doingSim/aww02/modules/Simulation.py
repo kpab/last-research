@@ -221,11 +221,11 @@ class Simulation:
         
         # 壁の描画
         for wall in self.walls:
-            ax.add_patch(Rectangle((wall[0], wall[1]), wall[2]-wall[0], wall[3]-wall[1]))
+            ax.add_patch(Rectangle((wall[0], wall[1]), wall[2]-wall[0], wall[3]-wall[1], fc='#696969'))
 
         for wall in self.fake_walls:
             if PERFECT_FAKE:
-                ax.add_patch(Rectangle((wall[0], wall[1]), wall[2]-wall[0], wall[3]-wall[1]))
+                ax.add_patch(Rectangle((wall[0], wall[1]), wall[2]-wall[0], wall[3]-wall[1], fc='#696969'))
             else:
                 ax.add_patch(Rectangle((wall[0], wall[1]), wall[2]-wall[0], wall[3]-wall[1],fc="r"))
 
@@ -249,14 +249,19 @@ class Simulation:
             ax.plot(start[0], start[1], 'ro', markersize=5)
 
         scatter = ax.scatter([], [], c=[])
-
+        # text = ax.text([], [], 0, ha='center')
+        # texts = [ax.text(agent.position[0], agent.position[1], agent.Stype, ha='center') for agent in self.agents]
         def update(frame):
             if now_frame == FRAME_COUNT:
                 plt.close(fig)
                 return []
             # print(np.array([agent.position for agent in self.agents]))
             self.update()
+            
             if not HIDE:
+                # for i, agent in enumerate(self.agents):
+                #     texts[i].set_position((agent.position[0], agent.position[1]))
+                #     texts[i].set_text(str(round(np.linalg.norm(agent.velocity), 3)))
                 scatter.set_offsets([agent.position for agent in self.agents])
                 scatter.set_color([agent.color for agent in self.agents])
             text.set_text(now_frame)

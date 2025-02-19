@@ -32,7 +32,7 @@ HEIGHT_HEATMAP = int(HEIGHT/10)
 # シミュレーション回す時、全部True
 
 PERFECT_FAKE = True # やる
-HIDE = True # シミュレーション隠すか
-BACKGROUND = True # Backgroundか
+HIDE = False # シミュレーション隠すか
+BACKGROUND = False # Backgroundか
 # ----------------
-LOG_NAME = "wall06.txt"
+LOG_NAME = "wall10.txt"

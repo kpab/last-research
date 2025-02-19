@@ -34,6 +34,24 @@ class Agent:
         else:
             self.middle_position = None
         self.total_speed = 0
+
+        if self.position[0] == 55:
+            self.Stype = "A"
+        elif self.position[0] == 310:
+            self.Stype = "B"
+        elif self.position[1] > 350:
+            self.Stype = "C"
+        else:
+            self.Stype = "K"
+
+        if self.goal[0] == 55:
+            self.Gtype = "A"
+        elif self.goal[0] == 310:
+            self.Gtype = "B"
+        elif self.goal[1] > 350:
+            self.Gtype = "C"
+        else:
+            self.Gtype = "K"
         
 
     def update(self, agents, walls):
@@ -58,12 +76,12 @@ class Agent:
         
         # フレームの更新
         self.frame += 1
-        self.total_speed += np.linalg.norm(self.velocity)
-
-          # 目的地に近づいたら速度を減少させる
+    
+        # 目的地に近づいたら速度を減少させる
         if np.linalg.norm(self.position - self.goal) < SLOWING_RANGE:
             self.velocity *= (np.linalg.norm(self.position - self.goal))/(SLOWING_RANGE) * SLOW_LEVEL # 目的地に近づいたらスピードを落とす
         
+        self.total_speed += np.linalg.norm(self.velocity)
         # 中間地点に着いたら目的地を変更
         if self.middle and self.middle_position is not None:
             if np.linalg.norm(self.position - self.middle_position) < MIDDLE_RANGE:

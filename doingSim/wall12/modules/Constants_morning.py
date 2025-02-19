@@ -33,6 +33,6 @@ HEIGHT_HEATMAP = int(HEIGHT/10)
 
 PERFECT_FAKE = True # やる
 HIDE = True # シミュレーション隠すか
-BACKGROUND = True # Backgroundか
+BACKGROUND = False # Backgroundか
 # ----------------
 LOG_NAME = "wall12.txt"

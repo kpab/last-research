@@ -27,6 +27,95 @@ def ChkAgentPos(now_agents_positions, agents):
     
     return now_agents_positions
 
+def ChkAgentPosAtoK(now_agents_positions, now_agents_speed, agents, total_apeed):
+    for agent in agents:
+        if agent.Stype == "A":
+        # サイズ変換
+            x_index = int(math.floor(agent.position[0]) // 10) 
+            y_index = int(math.floor(agent.position[1]) // 10)
+            # 範囲制限
+            x_index = np.clip(x_index, 0, WIDTH_HEATMAP - 1)
+            y_index = np.clip(y_index, 0, HEIGHT_HEATMAP - 1)
+            now_agents_positions[y_index][x_index] += 1
+            total_apeed[y_index][x_index] += np.linalg.norm(agent.velocity)
+            now_agents_speed[y_index][x_index] = round(total_apeed[y_index][x_index]/now_agents_positions[y_index][x_index], 3)
+    
+    return now_agents_positions
+
+def ChkAgentPosBtoK(now_agents_positions, now_agents_speed, agents, total_apeed):
+    for agent in agents:
+        if agent.Stype == "B":
+        # サイズ変換
+            x_index = int(math.floor(agent.position[0]) // 10) 
+            y_index = int(math.floor(agent.position[1]) // 10)
+            # 範囲制限
+            x_index = np.clip(x_index, 0, WIDTH_HEATMAP - 1)
+            y_index = np.clip(y_index, 0, HEIGHT_HEATMAP - 1)
+            now_agents_positions[y_index][x_index] += 1
+            total_apeed[y_index][x_index] += np.linalg.norm(agent.velocity)
+            now_agents_speed[y_index][x_index] = round(total_apeed[y_index][x_index]/now_agents_positions[y_index][x_index], 3)
+    
+    return now_agents_positions
+
+def ChkAgentPosCtoK(now_agents_positions, now_agents_speed, agents, total_apeed):
+    for agent in agents:
+        if agent.Stype == "C":
+        # サイズ変換
+            x_index = int(math.floor(agent.position[0]) // 10) 
+            y_index = int(math.floor(agent.position[1]) // 10)
+            # 範囲制限
+            x_index = np.clip(x_index, 0, WIDTH_HEATMAP - 1)
+            y_index = np.clip(y_index, 0, HEIGHT_HEATMAP - 1)
+            now_agents_positions[y_index][x_index] += 1
+            total_apeed[y_index][x_index] += np.linalg.norm(agent.velocity)
+            now_agents_speed[y_index][x_index] = round(total_apeed[y_index][x_index]/now_agents_positions[y_index][x_index], 3)
+    
+    return now_agents_positions
+
+def ChkAgentPosKtoA(now_agents_positions, now_agents_speed, agents, total_apeed):
+    for agent in agents:
+        if agent.Gtype == "A":
+        # サイズ変換
+            x_index = int(math.floor(agent.position[0]) // 10) 
+            y_index = int(math.floor(agent.position[1]) // 10)
+            # 範囲制限
+            x_index = np.clip(x_index, 0, WIDTH_HEATMAP - 1)
+            y_index = np.clip(y_index, 0, HEIGHT_HEATMAP - 1)
+            now_agents_positions[y_index][x_index] += 1
+            total_apeed[y_index][x_index] += np.linalg.norm(agent.velocity)
+            now_agents_speed[y_index][x_index] = round(total_apeed[y_index][x_index]/now_agents_positions[y_index][x_index], 3)
+    return now_agents_positions
+
+def ChkAgentPosKtoB(now_agents_positions, now_agents_speed, agents, total_apeed):
+    for agent in agents:
+        if agent.Gtype == "B":
+        # サイズ変換
+            x_index = int(math.floor(agent.position[0]) // 10) 
+            y_index = int(math.floor(agent.position[1]) // 10)
+            # 範囲制限
+            x_index = np.clip(x_index, 0, WIDTH_HEATMAP - 1)
+            y_index = np.clip(y_index, 0, HEIGHT_HEATMAP - 1)
+            now_agents_positions[y_index][x_index] += 1
+            total_apeed[y_index][x_index] += np.linalg.norm(agent.velocity)
+            now_agents_speed[y_index][x_index] = round(total_apeed[y_index][x_index]/now_agents_positions[y_index][x_index], 3)
+    return now_agents_positions
+
+def ChkAgentPosKtoC(now_agents_positions, now_agents_speed, agents, total_apeed):
+    for agent in agents:
+        if agent.Gtype == "C":
+        # サイズ変換
+            x_index = int(math.floor(agent.position[0]) // 10) 
+            y_index = int(math.floor(agent.position[1]) // 10)
+            # 範囲制限
+            x_index = np.clip(x_index, 0, WIDTH_HEATMAP - 1)
+            y_index = np.clip(y_index, 0, HEIGHT_HEATMAP - 1)
+            now_agents_positions[y_index][x_index] += 1
+            total_apeed[y_index][x_index] += np.linalg.norm(agent.velocity)
+            now_agents_speed[y_index][x_index] = round(total_apeed[y_index][x_index]/now_agents_positions[y_index][x_index], 3)
+    
+    return now_agents_positions
+
+
 def SayResult(frame, total_goaled_agents):
     result = [] # ログファイル用
     agents_average_speed = 0
