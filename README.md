@@ -16,4 +16,4 @@ plottingresult: 結果出力レポジトリ
 
 [壁の配置パターン](doingSim/walls.md)
 
-詳しくは、[READEME](doingSim/README.md) 参照
+詳しくは、[README](doingSim/README.md) 参照
