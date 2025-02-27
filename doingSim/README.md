@@ -15,9 +15,9 @@ python の組み込みモジュールである[subprocess](https://docs.python.o
 import subprocess
 
 simulations = [
-    "a.py",
-    "b.py",
-    "c.py",
+    "./a.py", # パスには注意してください
+    "./b.py",
+    "./c.py",
 ]
 
 # 並列で実行する場合

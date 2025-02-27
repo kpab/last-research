@@ -1,19 +1,5 @@
-plottingresult: 結果出力レポジトリ
+# 研究について
 
-<pre>
-.
-├── README.md
-├── datas
-├── doingSim [シミュレーション実行フォルダ]
-├── mds
-├── plottingResult [結果プロットフォルダ]
-├── resources
-├── slides
-└── wall-image
-</pre>
+淵野辺駅混雑緩和のためのマルチエージェント・シミュレーションにて使用した全コードを記載します.
 
-# [doingSim](doingSim)
-
-[壁の配置パターン](doingSim/walls.md)
-
-詳しくは、[README](doingSim/README.md) 参照
+> [研究内容](research.md)
