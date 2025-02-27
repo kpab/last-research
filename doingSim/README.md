@@ -8,7 +8,7 @@
 
 python の組み込みモジュールである[subprocess](https://docs.python.org/ja/3.13/library/subprocess.html)を使い、複数のシミュレーションを同時 or 連続して実行するファイルです。
 
-> Tips
+> [!TIP]
 > 複数のシミュレーションを実行したい場合、vscode で doingSim フォルダーを開き、**zzzmain.py**を実行します
 
 ```python
