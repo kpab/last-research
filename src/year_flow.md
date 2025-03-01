@@ -39,7 +39,7 @@ https://sintyoku01.streamlit.app/
 
 06/06 〜　 07/02 は Unity で進めていました
 
-Unity 編の最高傑作を置いて置きます
+Unity 編の最高傑作です
 https://unityroom.com/games/futinobe07
 
 > - スペースキー: 視点切り替え
@@ -59,6 +59,9 @@ Python に戻って作り始めました。
 A star やダイクストラ法を使い、歩行者の再現に挑戦していました。
 
 A\*編のコード https://github.com/kpab/futinobe
+
+> 混雑度が上がった時にめり込んでしまうという問題を解決できず、別のアルゴリズムにしよう！ということで
+> Boids 編が始まります
 
 ### 10 〜 1 月
 
