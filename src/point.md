@@ -28,3 +28,7 @@
 - dropbox にあげるでもいいと思いますが、github が使えるとかっこいいです
 
 - 個人的に、教室のデスクトップを使うときに重宝しました
+
+### ファイルの並行・連続実行
+
+[subprocess](https://docs.python.org/ja/3.13/library/subprocess.html)を使い、python ファイルを並行 or 連続で実行することです ([詳細](https://github.com/kpab/last-research/tree/main/futinobe/doingSim#zzzmainpy))
