@@ -11,3 +11,4 @@
 ## その他
 
 - [没テーマ案](src/banned_heme_plan.md)
+- [輪講について](src/rinkou.md)
