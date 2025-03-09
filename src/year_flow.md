@@ -18,35 +18,42 @@
 
 - 05/14 簡単なシミュレーションを初めて作成
 
-<details><summary>簡単なモデルです。</summary>
-
-https://sintyoku01.streamlit.app/
-
-- 歩行者はランダムな場所に同時に出現する。
-- 歩行者は、右端に向かう
-- 座標が被った場合、次のフレームは動かない
-- 衝突を判定すると青 → 赤に色が変化する
+  > <details><summary>簡単なシミュレーション</summary>
+  >
+  > https://sintyoku01.streamlit.app/
+  >
+  > - 歩行者はランダムな場所に同時に出現する。
+  > - 歩行者は、右端に向かう
+  > - 座標が被った場合、次のフレームは動かない
+  > - 衝突を判定すると青 → 赤に色が変化する
 
 </details>
 
 - 05/16 〜 06/04 論文
 
-この期間は混雑度や歩行者の動きに関する論文を読んでました。
+  > この期間は混雑度や歩行者の動きに関する論文を読んでました。
+
+  <details><summary>論文</summary>
+
+  </details>
 
 ### 6 月
 
 名付けるなら **Unity 編**です。
 
-06/06 〜　 07/02 は Unity で進めていました
+06/06 〜 07/02 は Unity で進めていました
 
-Unity 編の最高傑作です
+<details><summary>Unity 編の最高傑作です</summary>
+
 https://unityroom.com/games/futinobe07
 
 > - スペースキー: 視点切り替え
 > - a キー: エージェント発射
 > - Up, Down: 生成頻度の操作
 
-> -Unity のメソッドの中身がわからず Python に戻りました
+</details>
+
+Unity のメソッドの中身がわからず Python に戻りました
 
 Unity 編のコード
 https://github.com/kpab/futinobe_unity
@@ -65,8 +72,10 @@ A\*編のコード https://github.com/kpab/futinobe
 
 ### 10 〜 1 月
 
-**Boids 編**です。正確にはオリジナル編です。
+**Boids 編**です。
+Boids モデルの分離ルールと結合ルールを応用し、モデルを作りました
 
 Boids 編のコードです
-https://github.com/kpab/doingSim
-https://github.com/kpab/plottingResult
+
+- [シミュレーション] https://github.com/kpab/doingSim
+- [結果出力] https://github.com/kpab/plottingResult

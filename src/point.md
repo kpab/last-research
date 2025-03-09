@@ -1,16 +1,16 @@
-# やっておいてよかったことについて
+# POINT や注意点
 
-レベルに応じて紹介します
+学んでおくと研究に役立つことや、注意点を示します
 
 > [!NOTE]
-> レベルは個人的な評価です
+> 個人的な評価です<br>
 > テーマにもよると思います
 
 ## 必須
 
 ### class の使い方
 
-[輪講について](src/point.md)に記載した教材で学習後、自分で作って動かしてみると良いと思います
+[輪講について](src/point.md)に記載したポケモンの教材で学習後、自分で作って動かしてみると良いと思います
 
 ### ログをファイルに出力する
 
@@ -31,4 +31,19 @@
 
 ### ファイルの並行・連続実行
 
-[subprocess](https://docs.python.org/ja/3.13/library/subprocess.html)を使い、python ファイルを並行 or 連続で実行することです ([詳細](https://github.com/kpab/last-research/tree/main/futinobe/doingSim#zzzmainpy))
+[subprocess](https://docs.python.org/ja/3.13/library/subprocess.html)を使い、python ファイルを並行 or 連続で実行することです ([詳細](https://github.com/kpab/last-research/tree/main/futinobe/doingSim#zzzmainpy))。
+
+## 注意
+
+### AI の使用
+
+個人的に良くないと思った AI の使い方 2024 年度の実例を示します
+
+- Paiza の問題を AI に解かせる
+
+  > 自分のためになりません<br>
+  > その時、他のメンバーに見栄を張れても、絶対にバレます
+
+- 研究のコードを AI に作らせる
+
+-

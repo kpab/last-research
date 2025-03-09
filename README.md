@@ -16,4 +16,4 @@
 
 - ### [輪講について](src/rinkou.md)
 
-- ### [やっといてよかったこと](src/point.md)
+- ### [POINT や注意点](src/point.md)
