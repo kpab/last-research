@@ -34,8 +34,15 @@
 - 05/16 〜 06/04 論文
 
   > この期間は混雑度や歩行者の動きに関する論文を読んでました。
-
-  <details><summary>論文</summary>
+  >
+  > <details><summary>論文たち</summary>
+  >
+  > - [避難シミュレーションシステムの経路障害発生時への適用](https://www.jstage.jst.go.jp/article/aija/73/626/73_626_721/_pdf)
+  > - [意思決定プロセスモデルによる群集流動シミュレーション](https://www.jstage.jst.go.jp/article/tjsai/32/5/32_AG16-H/_pdf/-char/ja)
+  > - [Pedestrian lane formation and its influence on egress efficiency in the presence of an obstacle](https://www.sciencedirect.com/science/article/abs/pii/S0925753521002988)
+  > - [パーソナルスペースを用いた障害物を回避する歩行者の群集流動](https://www.jstage.jst.go.jp/article/jscejd/64/4/64_4_513/_article/-char/ja/)
+  > - [出口での衝突と方向転換が流動係数に及ぼす影響と障害物の効果について](https://www.jstage.jst.go.jp/article/jsiamt/19/3/19_KJ00005701709/_article/-char/ja/)
+  > - [エージェントモデルによる連続的空間における人間行動シミュレータの構築及び建築計画への応用](https://www.jstage.jst.go.jp/article/aija/67/558/67_KJ00004075612/_article/-char/ja/)
 
   </details>
 
