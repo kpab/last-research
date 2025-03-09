@@ -8,7 +8,7 @@
 </p>
 
 <h2>
-<img src="src/Slack.png" width= 20px>
+<img src="src/img/Slack.png" width= 20px>
 研究内容
 
 </h2>
@@ -17,11 +17,11 @@
 
 > [研究内容](futinobe)
 
-## <img src="src/Slack.png" width= 20px> 研究の流れについて
+## <img src="src/img/Slack.png" width= 20px> 研究の流れについて
 
 - ### [1 年の流れ](src/year_flow.md)
 
-## <img src="src/Slack.png" width= 20px> その他
+## <img src="src/img/Slack.png" width= 20px> その他
 
 - ### [没テーマ案](src/banned_heme_plan.md)
 
